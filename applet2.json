@@ -13,5 +13,15 @@
         "latitude": 8.359554,
         "longitude": 124.869153,
         "message": "CCS Laboratory 2"
+    },
+    {
+        "latitude": 8.360118,
+        "longitude": 124.868861,
+        "message": "NBSC covered court"
+    },
+    {
+        "latitude": 8.361264,
+        "longitude": 124.867572,
+        "message": "NBSC gate"
     }
 ]
