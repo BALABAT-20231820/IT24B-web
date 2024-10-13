@@ -37,63 +37,59 @@
      </style>
  </head>
   
- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Home</a>
+ <nav class="navbar navbar-expand-lg" style="background-color: #87CEEB;">
+  <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">Home</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Applets
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./applet1/">Applet 1</a></li>
-              <li><a class="dropdown-item" href="applet2.html">Applet 2</a></li>
-              <li><a class="dropdown-item" href="./applet3/">Applet 3</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Applets</a>
+                 <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="applet1.html">Applet 1</a></li>
+                      <li><a class="dropdown-item" href="applet2.html">Applet 2</a></li>
+                      <li><a class="dropdown-item" href="applet3.html">Applet 3</a></li>
+                 </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+          </ul>
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
       </div>
-    </div>
+  </div>
 </nav>
 
 <body>
     
-  <h1 class="title" >Event Driven Programming Library</h1>
-  <div class="applet-flex-container">
-      
-      <div class="card applet-card" >
-          <div class="card-body">
-            <h5 class="card-title">Applet 1 - Basic Events </h5>
-            <p class="card-text">This application contains the basic implementation of DOM events</p>
-            <a href="./applet-1/" class="btn btn-primary">Go to Applet</a>
-          </div>
-      </div>
-      <div class="card applet-card" >
-        <div class="card-body">
-          <h5 class="card-title">Applet 2 - Leaflet Map</h5>
-          <p class="card-text">This application contains the basic web map</p>
-          <a href="applet2.html" class="btn btn-primary">Go to Applet</a>
+  <h1 class="title text-center mb-5" style="font-size: 2.5rem; color: #007bff; font-weight: bold; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
+    Event Driven Programming Library
+</h1>
+<div class="applet-flex-container d-flex flex-wrap justify-content-center gap-4">
+    <div class="card applet-card" style="width: 18rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s; overflow: hidden;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Applet 1 - Basic Events</h5>
+            <a href="applet1.html" class="btn btn-primary mt-3">Go to Applet</a>
         </div>
-      </div>
-      <div class="card applet-card" >
-        <div class="card-body">
-          <h5 class="card-title">Applet 3 - Event Button Logger </h5>
-          <p class="card-text">This application applies recording events while using HTML elements such as buttons</p>
-          <a href="./applet-3/" class="btn btn-primary">Go to Applet</a>
+    </div>
+    <div class="card applet-card" style="width: 18rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s; overflow: hidden;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Applet 2 - Leaflet Map</h5>
+            <a href="applet2.html" class="btn btn-primary mt-3">Go to Applet</a>
         </div>
-      </div>
-      
-  </div>
+    </div>
+    <div class="card applet-card" style="width: 18rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s; overflow: hidden;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Applet 3 - Event Button Logger</h5>
+            <a href="applet3.html" class="btn btn-primary mt-3">Go to Applet</a>
+        </div>
+    </div>
+</div>
+</div>
 </body>
 </html>
