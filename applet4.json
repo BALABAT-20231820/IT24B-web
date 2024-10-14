@@ -13,8 +13,26 @@
     },
     {
       "student_id": 3,
-      "student_name": "BINI Johnson",
-      "student_program": "BS - Information Technology",
+      "student_name": "BINI JOHNSON",
+      "student_program": "BS-Information Technology",
+      "student_enrolled_date": "2023-03-10"
+    },
+    {
+      "student_id": 4,
+      "student_name": "BINI MIYA",
+      "student_program": "BS-Computer Engineering",
+      "student_enrolled_date": "2023-02-20"
+    },
+    {
+      "student_id": 5,
+      "student_name": "BINI HAROLD",
+      "student_program": "BS-Information Technology",
+      "student_enrolled_date": "2023-03-10"
+    },
+    {
+      "student_id": 6,
+      "student_name": "BINI GIOVANNY",
+      "student_program": "BS-Information Technology",
       "student_enrolled_date": "2023-03-10"
     }
 ]    
