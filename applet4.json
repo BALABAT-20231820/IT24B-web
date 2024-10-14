@@ -1,0 +1,20 @@
+[
+    {
+      "student_id": 1,
+      "student_name": "BINI ZILONG",
+      "student_program": "BS-Computer Science",
+      "student_enrolled_date": "2023-01-15"
+    },
+    {
+      "student_id": 2,
+      "student_name": "BINI LAYLA",
+      "student_program": "BS-Computer Engineering",
+      "student_enrolled_date": "2023-02-20"
+    },
+    {
+      "student_id": 3,
+      "student_name": "BINI Johnson",
+      "student_program": "BS - Information Technology",
+      "student_enrolled_date": "2023-03-10"
+    }
+]    
