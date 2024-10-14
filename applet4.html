@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Applet 4 - Dynamic Elements</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light background color */
+            color: #333; /* Dark text color */
+        }
+
+        .navbar {
+            background-color: #6a1b9a; /* Dark purple color for navbar */
+        }
+
+        .navbar .navbar-brand, .navbar .nav-link {
+            color: #fff !important; /* White color for navbar text */
+        }
+
+        .input-search {
+            margin-left: 3rem;
+            margin-top: 2rem;
+            width: 60%;
+        }
+
+        .btn-custom {
+            background-color: #8e24aa; /* Purple button background */
+            color: #fff; /* White text */
+            border: none;
+            margin-top: 15px;
+            width: 25rem;
+        }
+
+        .btn-custom:hover {
+            background-color: #ab47bc; /* Lighter purple on hover */
+        }
+
+        .input-group-text {
+            background-color: #6a1b9a; /* Dark purple background for input prefix */
+            color: #fff; /* White text */
+        }
+    </style>
+</head>
+<nav class="navbar navbar-expand-lg" style="background-color: #87CEEB;">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Applets</a>
+                   <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="applet1.html">Applet 1</a></li>
+                        <li><a class="dropdown-item" href="applet2.html">Applet 2</a></li>
+                        <li><a class="dropdown-item" href="applet3.html">Applet 3</a></li>
+                   </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+  </nav>
+
+  <body>
+    <div class="input-group input-group-lg input-search">
+        <span class="input-group-text">Search</span>
+        <input type="text" class="form-control" id="studentSearchBar">
+    </div>
+    <div id="studentList" style="margin-left: 3.5rem;"></div>
+    <div id="studentSearchList" style="margin-left: 3.5rem;"></div>
+
+    <script src="applet4.js"></script>
+</body>
+
+</html>
