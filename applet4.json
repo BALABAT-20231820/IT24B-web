@@ -34,5 +34,17 @@
       "student_name": "BINI GIOVANNY",
       "student_program": "BS-Information Technology",
       "student_enrolled_date": "2023-03-10"
+    },
+    {
+      "student_id": 7,
+      "student_name": "BINI CLINT",
+      "student_program": "BS-Information Technology",
+      "student_enrolled_date": "2023-03-10"
+    },
+    {
+      "student_id": 8,
+      "student_name": " papasara ko sir",
+      "student_program": "BS-Information Technology",
+      "student_enrolled_date": "2023-03-10"
     }
 ]    
