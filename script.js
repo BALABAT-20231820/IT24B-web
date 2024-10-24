@@ -5,4 +5,9 @@ class CardSearch {
         this.cards = this.cardContainer.querySelectorAll('.col-md-4');
         this.init();
 }
+init() {
+    this.searchInput.addEventListener('input', () => {
+        this.filterCards(this.searchInput.value);
+    });
+}
 }
