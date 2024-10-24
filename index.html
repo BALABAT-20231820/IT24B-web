@@ -87,17 +87,24 @@
         <span class="input-group-text">Search</span>
         <input type="text" id="cardSearch" class="form-control" placeholder="Search applets...">
     </div>
-    
+
     <h1 class="title text-center mb-5" style="font-size: 2.5rem; color: #007bff; font-weight: bold; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
       Event Driven Programming Library
   </h1>
-  <div class="applet-flex-container d-flex flex-wrap justify-content-center gap-4">
-      <div class="card applet-card" style="width: 18rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s; overflow: hidden;">
-          <div class="card-body text-center">
-              <h5 class="card-title">Applet 1 - Basic Events</h5>
-              <a href="applet1.html" class="btn btn-primary mt-3">Go to Applet</a>
-          </div>
-      </div>
+
+  <div class="container">
+    <div class="row" id="cardContainer">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <a href="applet1.html"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Applet 1 - Basic Events</h5>
+                    <p class="card-text">Basic</p>
+                    <a href="applet1.html" class="btn btn-primary">Click</a>
+                </div>
+            </div>
+        </div>
+
       <div class="card applet-card" style="width: 18rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s; overflow: hidden;">
           <div class="card-body text-center">
               <h5 class="card-title">Applet 2 - Leaflet Map</h5>
