@@ -96,4 +96,3 @@ class WeatherService extends WeatherApp {
         return null;
     }
 }
-const weatherApp = new WeatherService();
