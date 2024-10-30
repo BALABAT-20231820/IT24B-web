@@ -22,5 +22,6 @@ class Todolist {
     }
     addTask(taskText){
         const listItem = document.createElement('li');
+        listItem.className = 'list-group-item todo-item';
     }
 }
