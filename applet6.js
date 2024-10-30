@@ -7,7 +7,8 @@ class Todolist {
 
         this.addButton.addEventListener('click', () => this.addOrUpdateTask());
         this.todoList.addEventListener('click', (e) => {
-            const action = e.target.classList.contains('removeButton') ? 'remove' : 
+            const action = e.target.classList.contains('removeButton') ? 'remove' :
+            e.target.classList.contains('editButton') ? 'edit' : 
         });
     }
 }
