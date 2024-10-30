@@ -15,5 +15,8 @@ class Todolist {
     }
     addOrUpdateTask(){
         const taskText = this.todoInput.value.trim();
+        if (taskText) {
+            
+        }
     }
 }
