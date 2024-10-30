@@ -55,4 +55,7 @@ class Todolist {
         this.todoInput.value = taskItem.querySelector('.task-text').textContent;
         this.addButton.textContent = 'Update';
     }
+    resetEditing(){
+        
+    }
 }
