@@ -40,6 +40,7 @@ class Todolist {
         taskText.classList.toggle('completed'); 
         
         const buttons = taskItem.querySelectorAll('button');
-        
+        buttons.forEach(button => button.disabled = true);
+    
     }
 }
