@@ -67,6 +67,6 @@ class TimestampedTodolist extends Todolist{
         const timestamp = document.createElement('span');
         timestamp.className = 'timestamp';
         timestamp.textContent = new Date().toLocaleString();
-        
+        taskItem.appendChild(timestamp);
     }
 }
