@@ -41,6 +41,8 @@ class Todolist {
         
         const buttons = taskItem.querySelectorAll('button');
         buttons.forEach(button => button.disabled = true);
-    
+    }
+    updateTask(taskText){
+        
     }
 }
