@@ -1,3 +1,5 @@
 class Todolist {
-    
+    constuctor(){
+        
+    }
 }
