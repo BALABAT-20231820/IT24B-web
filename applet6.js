@@ -17,6 +17,7 @@ class Todolist {
         const taskText = this.todoInput.value.trim();
         if (taskText) {
             this.editingIndex === -1 ? this.addTask(taskText) : this.updateTask(taskText);
+            this.todoInput.value = '';
         }
     }
 }
