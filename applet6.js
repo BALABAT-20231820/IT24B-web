@@ -37,6 +37,7 @@ class Todolist {
     doneTask(event){
         const taskItem = event.target.closest('.todo-item');
         const taskText = taskItem.querySelector('.task-text');
-        
+        taskText.classList.toggle('completed'); 
+
     }
 }
