@@ -46,4 +46,7 @@ class Todolist {
         this.todoList.children[this.editingIndex].querySelector('.task-text').textContent = taskText;
         this.resetEditing();
     }
+    removeTask(event){
+        
+    }
 }
