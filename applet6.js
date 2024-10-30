@@ -35,6 +35,7 @@ class Todolist {
         this.todoList.appendChild(listItem);
     }
     doneTask(event){
+        const taskItem = event.target.closest('.todo-item');
         
     }
 }
