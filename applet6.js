@@ -43,6 +43,7 @@ class Todolist {
         buttons.forEach(button => button.disabled = true);
     }
     updateTask(taskText){
-        
+        this.todoList.children[this.editingIndex].querySelector('.task-text').textContent = taskText;
+       
     }
 }
