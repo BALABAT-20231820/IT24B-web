@@ -20,4 +20,7 @@ class Todolist {
             this.todoInput.value = '';
         }
     }
+    addTask(taskText){
+        
+    }
 }
