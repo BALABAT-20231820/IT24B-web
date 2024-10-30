@@ -21,6 +21,6 @@ class Todolist {
         }
     }
     addTask(taskText){
-        
+        const listItem = document.createElement('li');
     }
 }
