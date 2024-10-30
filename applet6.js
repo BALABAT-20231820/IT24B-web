@@ -62,6 +62,6 @@ class Todolist {
 }
 class TimestampedTodolist extends Todolist{
     addTask(taskText) {
-        
+        super.addTask(taskText);
     }
 }
