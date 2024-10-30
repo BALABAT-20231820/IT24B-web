@@ -32,5 +32,6 @@ class Todolist {
                 <button class="btn btn-danger btn-sm removeButton">Remove</button>
             </div>
         `;
+        this.todoList.appendChild(listItem);
     }
 }
