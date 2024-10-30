@@ -49,4 +49,8 @@ class Todolist {
     removeTask(event){
         this.todoList.removeChild(event.target.closest('.todo-item'));
     }
+    editTask(event){
+        const taskItem = event.target.closest('.todo-item');
+        
+    }
 }
