@@ -55,6 +55,7 @@ class AppletManager{
     async loadAppletData(url){
         try{
             const response = await fetch(url);  
+            this.appletList = await response.json();
         }
     }
 }
