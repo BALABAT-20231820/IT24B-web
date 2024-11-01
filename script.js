@@ -44,7 +44,7 @@ class Applet{
 }
 
 class AppletManager{
-    constructor(containerId){
+    constructor(containerId , searchInpitId){
 
     }
 }
