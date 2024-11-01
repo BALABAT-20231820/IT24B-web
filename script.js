@@ -1,24 +1,26 @@
 class Applet{
-    constructor(title , description , link , icon){
+    constructor(title, description, link, icon){
         this.title = title;
         this.description = description;
         this.link = link;
         this.icon = icon;
     }
+
     createCard(){
         const cardElement = document.createElement('div');
         cardElement.className = 'col-md-4';
-
+        
         const card = document.createElement('div');
         card.className = 'card';
         
         const cardBody = document.createElement('div');
         cardBody.className = 'card-body';
+
         const iconElement = document.createElement('img');
         iconElement.src = this.icon; 
         iconElement.alt = this.title + " icon"; 
         iconElement.className = 'icon';
-
+        
         const titleElement = document.createElement('h5');
         titleElement.className = 'applet-title';
         titleElement.innerText = this.title;
@@ -44,7 +46,7 @@ class Applet{
 }
 
 class AppletManager{
-    constructor(containerId , searchInpitId){
+    constructor(containerId, searchInputId){
         this.container = document.getElementById(containerId);
         this.searchInput = document.getElementById(searchInputId);
         this.appletList = [];
@@ -54,22 +56,24 @@ class AppletManager{
     }
     async loadAppletData(url){
         try{
-            const response = await fetch(url);  
+            const response = await fetch(url);
             this.appletList = await response.json();
             this.filteredList = this.appletList;
             this.displayApplets(this.filteredList);
         }
-        catch(wrror){
+        catch(error){
             console.error('Error loading applet data:', error);
         }
     }
     displayApplets(appletData) {
         this.container.innerHTML = '';
         appletData.forEach(applet => {
-            const appletCard = new Applet(applet.title , applet.description , applet.link , applet.icon);
+            const appletCard = new Applet (applet.title , applet.description , applet.link , applet.icon);
             this.container.appendChild(appletCard.createCard());
-        });
-    }
+       });
+
+    }   
+
     filterApplets(){
         const query = this.searchInput.value.toLowerCase();
         this.filteredList = this.appletList.filter(applet =>
