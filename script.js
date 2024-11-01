@@ -59,7 +59,7 @@ class AppletManager{
             this.filteredList = this.appletList;
             this.displayApplets(this.filteredList);
         }
-        cathch(wrror){
+        catch(wrror){
             console.error('Error loading applet data:', error);
         }
     }
