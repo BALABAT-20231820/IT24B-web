@@ -1,1 +1,5 @@
-class Applet{}
+class Applet{
+    constructor(){
+        
+    }
+}
