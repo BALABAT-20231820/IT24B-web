@@ -9,7 +9,7 @@
     {
         "title";  "Applet 2: Interactive Maps",
         "description": "Create interactive web maps using Leaflet and map data.",
-        "link",
+        "link" "applet2.html",
         "icon";,
       }m
       {
