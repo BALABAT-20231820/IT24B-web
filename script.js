@@ -64,5 +64,6 @@ class AppletManager{
         }
     }
     displayApplets(appletData) {
+        this.container.innerHTML = '';
     }
 }
