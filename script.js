@@ -31,5 +31,13 @@ class Applet{
         linkElement.href = this.link;
         linkElement.className = 'btn btn-primary';
         linkElement.innerText = 'Launch Applet';
+
+        cardBody.appendChild(iconElement); 
+        cardBody.appendChild(titleElement);
+        cardBody.appendChild(descElement);
+        cardBody.appendChild(linkElement);
+        card.appendChild(cardBody);
+        cardElement.appendChild(card);
+
     }
 }
