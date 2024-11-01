@@ -67,6 +67,7 @@ class AppletManager{
         this.container.innerHTML = '';
         appletData.forEach(applet => {
             const appletCard = new Applet(applet.title , applet.description , applet.link , applet.icon);
+            this.container.appendChild(appletCard.createCard());
         });
     }
 }
