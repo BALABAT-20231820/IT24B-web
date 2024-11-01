@@ -46,5 +46,6 @@ class Applet{
 class AppletManager{
     constructor(containerId , searchInpitId){
         this.container = document.getElementById(containerId);
+        this.searchInput = document.getElementById(searchInputId);
     }
 }
