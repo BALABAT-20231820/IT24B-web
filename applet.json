@@ -30,5 +30,11 @@
         "link",
         "icon";,
       }m
+      {
+        "title";  "Applet 1: Basic Events"
+        "description":,
+        "link",
+        "icon";,
+      }m
     
 ]
