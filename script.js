@@ -59,6 +59,8 @@ class AppletManager{
             this.filteredList = this.appletList;
             this.displayApplets(this.filteredList);
         }
-        cathch(){}
+        cathch(wrror){
+
+        }
     }
 }
