@@ -81,3 +81,4 @@ class AppletManager{
 }
 
 const appletManager = new AppletManager ('applet-container','searchApplet');
+appletManager.loadAppletData('applet.json');
