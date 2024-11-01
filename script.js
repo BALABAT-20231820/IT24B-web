@@ -74,6 +74,7 @@ class AppletManager{
         const query = this.searchInput.value.toLowerCase();
         this.filteredList = this.appletList.filter(applet =>
             applet.title.toLowerCase().includes(query) ||
+            applet.description.toLowerCase().includes(query)
         );
     }
 }
