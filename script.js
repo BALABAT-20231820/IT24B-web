@@ -56,6 +56,7 @@ class AppletManager{
         try{
             const response = await fetch(url);  
             this.appletList = await response.json();
+            this.filteredList = this.appletList;
         }
     }
 }
