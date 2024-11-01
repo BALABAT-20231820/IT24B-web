@@ -14,7 +14,7 @@
       }m
       {
         "title";  "Applet 3: Event Logger",
-        "description":,
+        "description": "Log user interactions on buttons and input elements.",
         "link",
         "icon";,
       }m
