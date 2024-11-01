@@ -5,5 +5,8 @@ class Applet{
         this.link = link;
         this.icon = icon;
     }
-    createCard(){}
+    createCard(){
+        const cardElement = document.createElement('div');
+        cardElement.className = 'col-md-4';
+    }
 }
