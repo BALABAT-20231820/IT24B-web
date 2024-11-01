@@ -22,5 +22,9 @@ class Applet{
         const titleElement = document.createElement('h5');
         titleElement.className = 'applet-title';
         titleElement.innerText = this.title;
+
+        const descElement = document.createElement('p');
+        descElement.className = 'card-text';
+        descElement.innerText = this.description;
     }
 }
