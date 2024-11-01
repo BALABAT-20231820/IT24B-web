@@ -26,5 +26,10 @@ class Applet{
         const descElement = document.createElement('p');
         descElement.className = 'card-text';
         descElement.innerText = this.description;
+
+        const linkElement = document.createElement('a');
+        linkElement.href = this.link;
+        linkElement.className = 'btn btn-primary';
+        linkElement.innerText = 'Launch Applet';
     }
 }
