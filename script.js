@@ -11,5 +11,8 @@ class Applet{
 
         const card = document.createElement('div');
         card.className = 'card';
+        
+        const cardBody = document.createElement('div');
+        cardBody.className = 'card-body';
     }
 }
