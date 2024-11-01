@@ -71,4 +71,6 @@ class AppletManager{
         });
     }
     filterApplets(){
+        const query = this.searchInput.value.toLowerCase();
+    }
 }
