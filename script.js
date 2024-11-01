@@ -39,5 +39,6 @@ class Applet{
         card.appendChild(cardBody);
         cardElement.appendChild(card);
 
+        return cardElement;
     }
 }
