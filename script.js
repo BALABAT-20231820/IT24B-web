@@ -80,4 +80,4 @@ class AppletManager{
     }
 }
 
-const appletManager = new AppletManager
+const appletManager = new AppletManager ('applet-container','searchApplet');
