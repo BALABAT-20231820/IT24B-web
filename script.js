@@ -76,5 +76,6 @@ class AppletManager{
             applet.title.toLowerCase().includes(query) ||
             applet.description.toLowerCase().includes(query)
         );
+        this.displayApplets(this.filteredList);
     }
 }
