@@ -21,7 +21,7 @@
       {
         "title"; "Applet 4: Dynamic DOM Manipulation",
         "description": "Learn how to create and modify HTML elements dynamically.",
-        "link",
+        "link" "applet4.html",
         "icon";,
       }m
       {
