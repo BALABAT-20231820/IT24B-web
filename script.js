@@ -14,5 +14,9 @@ class Applet{
         
         const cardBody = document.createElement('div');
         cardBody.className = 'card-body';
+        const iconElement = document.createElement('img');
+        iconElement.src = this.icon; 
+        iconElement.alt = this.title + " icon"; 
+        iconElement.className = 'icon';
     }
 }
