@@ -1,5 +1,5 @@
 class Applet{
-    constructor(){
-        
+    constructor(title){
+
     }
 }
