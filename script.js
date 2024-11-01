@@ -49,5 +49,7 @@ class AppletManager{
         this.searchInput = document.getElementById(searchInputId);
         this.appletList = [];
         this.filteredList = [];
+
+        this.searchInput.addEventListener('input', () => this.filterApplets());
     }
 }
