@@ -12,12 +12,12 @@
         "link": "applet2.html",
         "icon": "https://th.bing.com/th?id=OIP.Vd4_1nD2LPtsKk90GtyG7wHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2"
     }, 
-      {
-        "title";  "Applet 3: Event Logger",
+    {
+        "title": "Applet 3: Event Logger",
         "description": "Log user interactions on buttons and input elements.",
-        "link" "applet3.html",
-        "icon"; "https://th.bing.com/th?id=OIP.TtVSTXYWmNdUpDvhE3y6YwHaFK&w=299&h=208&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2"
-      }m
+        "link": "applet3.html",
+        "icon": "https://th.bing.com/th?id=OIP.TtVSTXYWmNdUpDvhE3y6YwHaFK&w=299&h=208&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2"
+    }, 
       {
         "title"; "Applet 4: Dynamic DOM Manipulation",
         "description": "Learn how to create and modify HTML elements dynamically.",
