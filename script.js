@@ -70,4 +70,5 @@ class AppletManager{
             this.container.appendChild(appletCard.createCard());
         });
     }
+    filterApplets(){
 }
