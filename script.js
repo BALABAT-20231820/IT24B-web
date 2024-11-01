@@ -5,4 +5,5 @@ class Applet{
         this.link = link;
         this.icon = icon;
     }
+    createCard(){}
 }
