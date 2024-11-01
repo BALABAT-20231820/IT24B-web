@@ -3,5 +3,6 @@ class Applet{
         this.title = title;
         this.description = description;
         this.link = link;
+        this.icon = icon;
     }
 }
