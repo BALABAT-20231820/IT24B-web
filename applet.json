@@ -1,16 +1,16 @@
 [
 
     {
-      "title";  "Applet 1: Basic Events"
+      "title" ; "Applet 1: Basic Events",
       "description":  "An introduction to basic DOM events, including click and hover interactions.",
       "link": "applet1.html",
-      "icon"; "https://th.bing.com/th?id=OIP.aKDEn6XuTJP9y2r3MInaCgHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2",
-    }m
+      "icon"; "https://th.bing.com/th?id=OIP.aKDEn6XuTJP9y2r3MInaCgHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2"
+    },
     {
         "title";  "Applet 2: Interactive Maps",
         "description": "Create interactive web maps using Leaflet and map data.",
         "link" "applet2.html",
-        "icon";,
+        "icon"; "https://th.bing.com/th?id=OIP.Vd4_1nD2LPtsKk90GtyG7wHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2"
       }m
       {
         "title";  "Applet 3: Event Logger",
