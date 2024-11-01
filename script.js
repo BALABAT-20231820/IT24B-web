@@ -44,5 +44,7 @@ class Applet{
 }
 
 class AppletManager{
-    
+    constructor(){
+        
+    }
 }
