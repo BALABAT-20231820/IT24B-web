@@ -52,4 +52,7 @@ class AppletManager{
 
         this.searchInput.addEventListener('input', () => this.filterApplets());
     }
+    async loadAppletData(){
+        
+    }
 }
