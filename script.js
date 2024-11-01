@@ -18,5 +18,9 @@ class Applet{
         iconElement.src = this.icon; 
         iconElement.alt = this.title + " icon"; 
         iconElement.className = 'icon';
+
+        const titleElement = document.createElement('h5');
+        titleElement.className = 'applet-title';
+        titleElement.innerText = this.title;
     }
 }
