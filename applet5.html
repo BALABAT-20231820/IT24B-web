@@ -1,97 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>Applet 5 - Weather </title>
+    <title>Applet 5 - Weather</title>
+
     <style>
-        .applet-searchbar{
-          margin: 1rem auto; 
-          width: 90%;
+        body {
+            background-color: #F3F4F6;
+            color: #333;
+            font-family: Arial, sans-serif;
         }
-        body{
-            background-color: rgb(49, 40, 40)
+
+        .applet-searchbar {
+            margin: 1rem auto;
+            width: 90%;
         }
-        #cityInput{
-            width: 30rem;
+
+        h2 {
+            color: #333;
+            margin-top: 2rem;
+        }
+
+        #cityInput,
+        #apiInput {
+            width: 100%;
+            max-width: 500px;
             height: 3.5rem;
-            border-radius: 20px;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border-radius: 10px;
+            border: 1px solid #87CEFA;
+            background-color: #FFF;
+            color: #333;
         }
-        h2{
+
+        p {
             color: aliceblue;
-            margin-top: 5rem;
         }
-        #apiInput{
-            width: 30rem;
-            height: 3.5rem;
-            border-radius: 20px;
-        }
-        p{
-        color:aliceblue;
-        }
+
         #weatherCard {
             display: none;
-            background-color: #2c2c2c; 
-            color: aliceblue; 
-            padding: 1.5rem; 
-            border-radius: 15px; 
+            background-color: #2c2c2c;
+            color: aliceblue;
+            padding: 1.5rem;
+            border-radius: 15px;
             margin-top: 2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-control {
+            background-color: #FFF;
+            border: 1px solid #CCC;
+            color: #333;
+        }
+
+        .btn {
+            margin-top: 1rem;
+            border: none;
+        }
+
+        #getWeatherBtn {
+            background-color: #4CAF50;
+            color: #FFF;
+        }
+
+        #getLocationBtn {
+            background-color: #FFA726;
+            color: #FFF;
+        }
+
+        #weatherCard h2 {
+            color: #87CEFA;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
         }
     </style>
- </head>
-<nav class="navbar navbar-expand-lg" style="background-color: #87CEEB;" >
-    <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Applets</a>
-            <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="applet1.html">Applet 1</a></li>
-                <li><a class="dropdown-item" href="applet2.html">Applet 2</a></li>
-                <li><a class="dropdown-item" href="applet3.html">Applet 3</a></li>
-                <li><a class="dropdown-item" href="applet4.html">Applet 4</a></li>
-                <li><a class="dropdown-item" href="applet5.html">Applet 5</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-        </ul>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-        </div>
-    </div>
-</nav>
+</head>
+
 <body>
-    <div class="container">
-        <h2>API key </h2>
-        <input type="text" id="apiInput" placeholder="Enter API key"/>
-    </div>
-    <div class="container">
-        <h2>Weather</h2>
-        <input type="text" id="cityInput" placeholder="Enter city name"/>
-        <button id="getWeatherBtn" class="btn btn-outline-info" style="margin-top: 1rem;">Get Weather</button>
-        <button id="getLocationBtn" class="btn btn-outline-warning"style="margin-top: 1rem;">Use My Location</button>
-    </div>
-    <div>
-        <div id="weatherCard" class="weather-card">
-            <br>
-            <h2 id="cityName"></h2>
-            <p id="temperature"></p>
-            <p id="description"></p>
-            <p id="humidity"></p>
-            <p id="windSpeed"></p>
+    
+    <nav class="navbar navbar-expand-lg" style="background-color: #87CEEB;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Applets</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="applet1.html">Applet 1</a></li>
+                            <li><a class="dropdown-item" href="applet2.html">Applet 2</a></li>
+                            <li><a class="dropdown-item" href="applet3.html">Applet 3</a></li>
+                            <li><a class="dropdown-item" href="applet4.html">Applet 4</a></li>
+                            <li><a class="dropdown-item" href="applet5.html">Applet 5</a></li>
+                            <li><a class="dropdown-item" href="applet6.html">Applet 6</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto search-box" role="search">
+                    <input class="form-control me-2" type="search" id="searchApplet" placeholder="Search for applets..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <h2><strong>Enter API Key</strong></h2>
+        <input type="text" id="apiInput" placeholder="Enter API key">
+        
+        <h2><strong>Weather</strong></h2>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <div>
+            <button id="getWeatherBtn" class="btn btn-outline-info">Get Weather</button>
+            <button id="getLocationBtn" class="btn btn-outline-warning">Use My Location</button>
+        </div>
+        
+        <div id="weatherCard" class="weather-card text-center mt-4">
+            <h2 id="cityName">City Name</h2>
+            <p id="temperature">Temperature: -- °C</p>
+            <p id="description">Weather: --</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="windSpeed">Wind Speed: -- km/h</p>
         </div>
     </div>
+
     <script src="applet5.js"></script>
+
 </body>
+
 </html>
