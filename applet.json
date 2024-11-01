@@ -3,7 +3,7 @@
     {
       "title";  "Applet 1: Basic Events"
       "description":  "An introduction to basic DOM events, including click and hover interactions.",
-      "link"
+      "link" "applet1.html",
       "icon";
     }m
     {
