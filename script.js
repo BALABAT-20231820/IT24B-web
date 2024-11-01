@@ -79,3 +79,5 @@ class AppletManager{
         this.displayApplets(this.filteredList);
     }
 }
+
+const appletManager = new AppletManager
