@@ -8,5 +8,8 @@ class Applet{
     createCard(){
         const cardElement = document.createElement('div');
         cardElement.className = 'col-md-4';
+
+        const card = document.createElement('div');
+        card.className = 'card';
     }
 }
