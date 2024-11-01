@@ -63,4 +63,6 @@ class AppletManager{
             console.error('Error loading applet data:', error);
         }
     }
+    displayApplets() {
+    }
 }
