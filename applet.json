@@ -27,7 +27,7 @@
       {
         "title";  "Applet 5: Weather Data Fetcher",
         "description": "Fetch weather data from the OpenWeather API and display it.",
-        "link",
+        "link" "applet5.html",
         "icon";,
       }m
       {
