@@ -73,5 +73,6 @@ class AppletManager{
     filterApplets(){
         const query = this.searchInput.value.toLowerCase();
         this.filteredList = this.appletList.filter(applet =>
+        );
     }
 }
